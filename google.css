@@ -1,0 +1,137 @@
+/* General Selectors */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    min-height: 100%;
+    position: relative;
+    font-family: Roboto, sans-serif;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Nav Bar */
+
+.header {
+    display: block;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.topleft {
+    grid-column-start: 1;
+    text-align: left;
+}
+
+.topleft li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.topright {
+    grid-column-start: 3;
+    text-align: right;
+}
+
+.topright li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.icon {
+    vertical-align: middle;
+    object-fit: cover;
+    max-height: 25px;
+}
+
+/* Main */
+
+.main-content {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#google-logo {
+    height: 200px;
+}
+
+#search-bar {
+    width: 475px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.button {
+    width: 150px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    opacity: 0.7;
+}
+
+.button :hover {
+    opacity: 1.0;
+}
+
+/* Footer */
+
+.footer {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: rgba(128, 128, 128, 0.35);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-width: 100%;
+}
+
+.bottomleft {
+    grid-column-start: 1;
+    display: inline-block;
+    text-align: left;
+    text-justify: center;
+}
+
+.bottomleft li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.bottomright {
+    grid-column-start: 3;
+    display: inline-block;
+    text-align: right;
+    text-justify: center;
+}
+
+.bottomright li {
+    padding: 5px;
+    margin: 5px;
+}
